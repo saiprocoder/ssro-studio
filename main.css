@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500&family=Nunito:wght@700&family=Quantico&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.logo img {
+    width: 33%;
+    border-radius: 100%;
+    border: 5px solid white;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    padding: 10px 0;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list li {
+    list-style-type: none;
+    padding: 26px 30px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-family: 'Quantico';
+    cursor: pointer;
+    transition: 0.6s ease;
+}
+
+.nav-list li a:hover {
+    color: antiquewhite;
+}
+
+.background {
+    background-image: linear-gradient(to right, purple, black, #00008b);
+}
+
+.firstSection {
+    height: 82.3vh;
+}
+
+.box-main {
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    height: 60vh;
+    justify-content: space-evenly;
+}
+
+.text-big {
+    font-size: 30px;
+    font-family: 'Nunito';
+}
+
+.text-small {
+    font-size: 25px;
+    font-family: 'Baloo Bhaijaan 2';
+}
+
+.secondHalf img {
+    border-radius: 100%;
+    border: 5px solid antiquewhite;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to right, purple, black, #00008b);
+    max-width: 80%;
+    color: white;
+    font-size: 25px;
+    margin-left: 20vh;
+    border: 10px solid antiquewhite;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.text-heading {
+    font-size: 30px;
+    font-family: 'Baloo Bhaijaan 2';
+}
+
+.text-paragraph {
+    font-size: 25px;
+    font-family: 'Nunito';
+    margin-top: 10px;
+}
+
+.paras {
+    padding: 0 65px;
+}
+
+.secLeft { 
+    flex-direction: row-reverse;
+}
+
+.thumbnail img {
+    width: 100px;
+    border-radius: 100%;
+    border: 7px solid antiquewhite;
+}
+
+.imgFluid {
+    width: 125px;
+    border-radius: 100%;
+    border: 5px solid antiquewhite;
+    margin: 0 10px;
+}
+
+.members {
+    padding: 5px;
+    color: white;
+    font-family: 'Nunito';
+}
+
+.membersContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.footer {
+    margin: 50px 0;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Quantico';
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background-image: linear-gradient(rgb(223, 253, 223), rgb(255, 255, 207));
+}
+
+::-webkit-scrollbar-thumb {
+    background: midnightblue;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: orangered;
+}
+
+.hamburger {
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    cursor: pointer;
+    display: none;
+}
+
+.bar1, .bar2, .bar3 {
+    background-color: orangered;
+    width: 45px;
+    height: 4px;
+    margin: 6px 0;
+    transition: 1s ease;
+}
+
+.cross .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.cross .bar2 {
+    opacity: 0;
+}
+
+.cross .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+@media only screen and (max-width: 1010px) {
+    .nav-listGo {
+        display: none;
+    }
+    .section {
+        margin-left: 30px;
+    }
+    .hamburger {
+        display: inline-block;
+    }
+    .nav-list {
+        flex-direction: column;
+    }
+    nav {
+        width: 100%;
+    }
+    .firstSection {
+        width: 100%;
+    }
+    .section {
+        width: 60%;
+        flex-direction: column;
+    }
+    .members {
+        width: 100%;
+    }
+    .membersContainer {
+        flex-wrap: wrap;
+    }
+    .box-main {
+        flex-direction: column;
+    }
+}
